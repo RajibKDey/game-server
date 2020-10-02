@@ -3,7 +3,7 @@ const moment = require("moment");
 
 exports.save_score = async (req, res) => {
   if (Number.isInteger(req.body.score)) {
-    //Create new user
+    //Create new score
     const score = new Score({
       email: req.user.email,
       score: req.body.score,
